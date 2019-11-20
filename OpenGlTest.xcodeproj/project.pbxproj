@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8482319F23727207007CDD35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8482319E23727207007CDD35 /* Assets.xcassets */; };
+		848231A223727207007CDD35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848231A023727207007CDD35 /* Main.storyboard */; };
+		848231B023727208007CDD35 /* OpenGlTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848231AF23727208007CDD35 /* OpenGlTestTests.m */; };
+		848231BB23727208007CDD35 /* OpenGlTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 848231BA23727208007CDD35 /* OpenGlTestUITests.m */; };
+		848231CB23727330007CDD35 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 848231C92372732F007CDD35 /* libGLEW.2.1.0.dylib */; };
+		848231CC23727330007CDD35 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 848231CA2372732F007CDD35 /* libglfw.3.3.dylib */; };
+		848231CE2372733D007CDD35 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848231CD2372733D007CDD35 /* OpenGL.framework */; };
+		848231D02372738A007CDD35 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 848231CF2372738A007CDD35 /* glad.c */; };
+		848231D2237273C4007CDD35 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848231D1237273C4007CDD35 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		848231AC23727208007CDD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8482318D23727207007CDD35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8482319423727207007CDD35;
+			remoteInfo = OpenGlTest;
+		};
+		848231B723727208007CDD35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8482318D23727207007CDD35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8482319423727207007CDD35;
+			remoteInfo = OpenGlTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8482319523727207007CDD35 /* OpenGlTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGlTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8482319E23727207007CDD35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848231A123727207007CDD35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		848231A323727207007CDD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848231A623727207007CDD35 /* OpenGlTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenGlTest.entitlements; sourceTree = "<group>"; };
+		848231AB23727208007CDD35 /* OpenGlTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGlTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		848231AF23727208007CDD35 /* OpenGlTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGlTestTests.m; sourceTree = "<group>"; };
+		848231B123727208007CDD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848231B623727208007CDD35 /* OpenGlTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGlTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		848231BA23727208007CDD35 /* OpenGlTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGlTestUITests.m; sourceTree = "<group>"; };
+		848231BC23727208007CDD35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848231C92372732F007CDD35 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		848231CA2372732F007CDD35 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/Cellar/glfw/3.3/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		848231CD2372733D007CDD35 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		848231CF2372738A007CDD35 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		848231D1237273C4007CDD35 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8482319223727207007CDD35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848231CC23727330007CDD35 /* libglfw.3.3.dylib in Frameworks */,
+				848231CB23727330007CDD35 /* libGLEW.2.1.0.dylib in Frameworks */,
+				848231CE2372733D007CDD35 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848231A823727208007CDD35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848231B323727208007CDD35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8482318C23727207007CDD35 = {
+			isa = PBXGroup;
+			children = (
+				8482319723727207007CDD35 /* OpenGlTest */,
+				848231AE23727208007CDD35 /* OpenGlTestTests */,
+				848231B923727208007CDD35 /* OpenGlTestUITests */,
+				8482319623727207007CDD35 /* Products */,
+				848231C82372732F007CDD35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8482319623727207007CDD35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8482319523727207007CDD35 /* OpenGlTest.app */,
+				848231AB23727208007CDD35 /* OpenGlTestTests.xctest */,
+				848231B623727208007CDD35 /* OpenGlTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8482319723727207007CDD35 /* OpenGlTest */ = {
+			isa = PBXGroup;
+			children = (
+				848231CF2372738A007CDD35 /* glad.c */,
+				8482319E23727207007CDD35 /* Assets.xcassets */,
+				848231A023727207007CDD35 /* Main.storyboard */,
+				848231A323727207007CDD35 /* Info.plist */,
+				848231A623727207007CDD35 /* OpenGlTest.entitlements */,
+				848231D1237273C4007CDD35 /* main.cpp */,
+			);
+			path = OpenGlTest;
+			sourceTree = "<group>";
+		};
+		848231AE23727208007CDD35 /* OpenGlTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				848231AF23727208007CDD35 /* OpenGlTestTests.m */,
+				848231B123727208007CDD35 /* Info.plist */,
+			);
+			path = OpenGlTestTests;
+			sourceTree = "<group>";
+		};
+		848231B923727208007CDD35 /* OpenGlTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				848231BA23727208007CDD35 /* OpenGlTestUITests.m */,
+				848231BC23727208007CDD35 /* Info.plist */,
+			);
+			path = OpenGlTestUITests;
+			sourceTree = "<group>";
+		};
+		848231C82372732F007CDD35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848231CD2372733D007CDD35 /* OpenGL.framework */,
+				848231C92372732F007CDD35 /* libGLEW.2.1.0.dylib */,
+				848231CA2372732F007CDD35 /* libglfw.3.3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8482319423727207007CDD35 /* OpenGlTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848231BF23727208007CDD35 /* Build configuration list for PBXNativeTarget "OpenGlTest" */;
+			buildPhases = (
+				8482319123727207007CDD35 /* Sources */,
+				8482319223727207007CDD35 /* Frameworks */,
+				8482319323727207007CDD35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGlTest;
+			productName = OpenGlTest;
+			productReference = 8482319523727207007CDD35 /* OpenGlTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		848231AA23727208007CDD35 /* OpenGlTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848231C223727208007CDD35 /* Build configuration list for PBXNativeTarget "OpenGlTestTests" */;
+			buildPhases = (
+				848231A723727208007CDD35 /* Sources */,
+				848231A823727208007CDD35 /* Frameworks */,
+				848231A923727208007CDD35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848231AD23727208007CDD35 /* PBXTargetDependency */,
+			);
+			name = OpenGlTestTests;
+			productName = OpenGlTestTests;
+			productReference = 848231AB23727208007CDD35 /* OpenGlTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		848231B523727208007CDD35 /* OpenGlTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848231C523727208007CDD35 /* Build configuration list for PBXNativeTarget "OpenGlTestUITests" */;
+			buildPhases = (
+				848231B223727208007CDD35 /* Sources */,
+				848231B323727208007CDD35 /* Frameworks */,
+				848231B423727208007CDD35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				848231B823727208007CDD35 /* PBXTargetDependency */,
+			);
+			name = OpenGlTestUITests;
+			productName = OpenGlTestUITests;
+			productReference = 848231B623727208007CDD35 /* OpenGlTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8482318D23727207007CDD35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = admin;
+				TargetAttributes = {
+					8482319423727207007CDD35 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					848231AA23727208007CDD35 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8482319423727207007CDD35;
+					};
+					848231B523727208007CDD35 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8482319423727207007CDD35;
+					};
+				};
+			};
+			buildConfigurationList = 8482319023727207007CDD35 /* Build configuration list for PBXProject "OpenGlTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8482318C23727207007CDD35;
+			productRefGroup = 8482319623727207007CDD35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8482319423727207007CDD35 /* OpenGlTest */,
+				848231AA23727208007CDD35 /* OpenGlTestTests */,
+				848231B523727208007CDD35 /* OpenGlTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8482319323727207007CDD35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8482319F23727207007CDD35 /* Assets.xcassets in Resources */,
+				848231A223727207007CDD35 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848231A923727208007CDD35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848231B423727208007CDD35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8482319123727207007CDD35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848231D2237273C4007CDD35 /* main.cpp in Sources */,
+				848231D02372738A007CDD35 /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848231A723727208007CDD35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848231B023727208007CDD35 /* OpenGlTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848231B223727208007CDD35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848231BB23727208007CDD35 /* OpenGlTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		848231AD23727208007CDD35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8482319423727207007CDD35 /* OpenGlTest */;
+			targetProxy = 848231AC23727208007CDD35 /* PBXContainerItemProxy */;
+		};
+		848231B823727208007CDD35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8482319423727207007CDD35 /* OpenGlTest */;
+			targetProxy = 848231B723727208007CDD35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		848231A023727207007CDD35 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848231A123727207007CDD35 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848231BD23727208007CDD35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		848231BE23727208007CDD35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		848231C023727208007CDD35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenGlTest/OpenGlTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				INFOPLIST_FILE = OpenGlTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.OpenGlTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		848231C123727208007CDD35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenGlTest/OpenGlTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"$(inherited)",
+					/usr/local/Cellar/glfw/3.3/lib,
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				INFOPLIST_FILE = OpenGlTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/2.1.0/lib,
+					/usr/local/Cellar/glfw/3.3/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-.OpenGlTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		848231C323727208007CDD35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenGlTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.OpenGlTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGlTest.app/Contents/MacOS/OpenGlTest";
+			};
+			name = Debug;
+		};
+		848231C423727208007CDD35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenGlTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.OpenGlTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGlTest.app/Contents/MacOS/OpenGlTest";
+			};
+			name = Release;
+		};
+		848231C623727208007CDD35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenGlTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.OpenGlTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenGlTest;
+			};
+			name = Debug;
+		};
+		848231C723727208007CDD35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OpenGlTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-.OpenGlTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenGlTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8482319023727207007CDD35 /* Build configuration list for PBXProject "OpenGlTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848231BD23727208007CDD35 /* Debug */,
+				848231BE23727208007CDD35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848231BF23727208007CDD35 /* Build configuration list for PBXNativeTarget "OpenGlTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848231C023727208007CDD35 /* Debug */,
+				848231C123727208007CDD35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848231C223727208007CDD35 /* Build configuration list for PBXNativeTarget "OpenGlTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848231C323727208007CDD35 /* Debug */,
+				848231C423727208007CDD35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848231C523727208007CDD35 /* Build configuration list for PBXNativeTarget "OpenGlTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848231C623727208007CDD35 /* Debug */,
+				848231C723727208007CDD35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8482318D23727207007CDD35 /* Project object */;
+}
